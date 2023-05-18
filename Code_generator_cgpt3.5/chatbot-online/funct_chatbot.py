@@ -86,4 +86,3 @@ if "__main__" == __name__ :
                 message(st.session_state["generated"][i], key=str(i))
 
 
-    st.write(st.session_state["generated"])
