@@ -13,7 +13,8 @@ def get_chatgpt_response(messages, model="gpt-3.5-turbo"):
     print("model: ", model)
     response = openai.ChatCompletion.create(
     model=model,
-    messages=messages
+    messages=messages, 
+    temperature=0.8
     )
     return  response['choices'][0]['message']['content']
 
